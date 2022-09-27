@@ -17,3 +17,8 @@ spring:
           uri: lb://MICROCLIENTE
           predicates:
             - Path=/clientepersonal/**
+        - id: microproducto
+          uri: lb://MICROPRODUCTO
+          predicates:
+            - Path=/accounts/**
+            - Path=/credits/**
